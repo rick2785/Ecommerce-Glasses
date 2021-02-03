@@ -11,6 +11,12 @@
 		09418F0025C9860400660315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418EFF25C9860400660315 /* ContentView.swift */; };
 		09418F0225C9860500660315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09418F0125C9860500660315 /* Assets.xcassets */; };
 		09418F0525C9860500660315 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09418F0425C9860500660315 /* Preview Assets.xcassets */; };
+		09418F1125CAC72D00660315 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F1025CAC72D00660315 /* Home.swift */; };
+		09418F1525CACFAD00660315 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F1425CACFAD00660315 /* TabButton.swift */; };
+		09418F1825CAD25F00660315 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F1725CAD25F00660315 /* Item.swift */; };
+		09418F1B25CAD43C00660315 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F1A25CAD43C00660315 /* CardView.swift */; };
+		09418F1E25CAF34000660315 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F1D25CAF34000660315 /* Detail.swift */; };
+		09418F2125CB06BE00660315 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09418F2025CB06BE00660315 /* CustomShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		09418F0125C9860500660315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09418F0425C9860500660315 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09418F0625C9860500660315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09418F1025CAC72D00660315 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		09418F1425CACFAD00660315 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		09418F1725CAD25F00660315 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		09418F1A25CAD43C00660315 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		09418F1D25CAF34000660315 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		09418F2025CB06BE00660315 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,8 @@
 		09418EFC25C9860400660315 /* Ecommerce-Glasses */ = {
 			isa = PBXGroup;
 			children = (
+				09418F0F25CAC72300660315 /* Model */,
+				09418F0E25CAC71D00660315 /* View */,
 				09418EFD25C9860400660315 /* Ecommerce_GlassesApp.swift */,
 				09418EFF25C9860400660315 /* ContentView.swift */,
 				09418F0125C9860500660315 /* Assets.xcassets */,
@@ -67,6 +81,26 @@
 				09418F0425C9860500660315 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09418F0E25CAC71D00660315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09418F1025CAC72D00660315 /* Home.swift */,
+				09418F1425CACFAD00660315 /* TabButton.swift */,
+				09418F1A25CAD43C00660315 /* CardView.swift */,
+				09418F1D25CAF34000660315 /* Detail.swift */,
+				09418F2025CB06BE00660315 /* CustomShape.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09418F0F25CAC72300660315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09418F1725CAD25F00660315 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09418F2125CB06BE00660315 /* CustomShape.swift in Sources */,
+				09418F1825CAD25F00660315 /* Item.swift in Sources */,
+				09418F1E25CAF34000660315 /* Detail.swift in Sources */,
 				09418F0025C9860400660315 /* ContentView.swift in Sources */,
+				09418F1525CACFAD00660315 /* TabButton.swift in Sources */,
+				09418F1125CAC72D00660315 /* Home.swift in Sources */,
+				09418F1B25CAD43C00660315 /* CardView.swift in Sources */,
 				09418EFE25C9860400660315 /* Ecommerce_GlassesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.rjhrabowskie.Ecommerce-Glasses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,6 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.rjhrabowskie.Ecommerce-Glasses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
